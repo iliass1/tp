@@ -3,7 +3,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-data_path = r'C:/Users/acer/Downloads/ml-100k//'  
+data_path = r'C:/Users/acer/Desktop/TP/ml-100k//'
+ 
 
 ratings_columns = ['user_id', 'item_id', 'rating', 'timestamp']
 df_ratings = pd.read_csv(data_path + 'u.data', sep='\t', names=ratings_columns, encoding='latin-1')
